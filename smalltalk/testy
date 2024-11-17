@@ -1,0 +1,28 @@
+Transcript clear.
+
+Transcript show:'KWADRAT';cr.
+k := (Kwadrat  new) initialize: 3.
+Transcript show: k nazwa;cr.
+Transcript show:'KWADRAT DRUKUJ';cr.
+k drukuj.
+Transcript show:'KWADRAT SKALUJ';cr.
+k skaluj: 4.
+k drukuj.
+Transcript show:'KWADRAT SUMA';cr.
+k2 := (Kwadrat new) initialize: 1.
+k2 drukuj.
+(k+k2) drukuj.
+Transcript show:'';cr.
+
+Transcript show:'TROJKAT ROWNORAMIENNY';cr.
+t := (Trojkat_rownoramienny new) initialize: 2 wysokosc: 2.
+Transcript show: t nazwa;cr.
+Transcript show:'TROJKAT DRUKUJ';cr.
+t drukuj.
+Transcript show:'TROJKAT SKALUJ';cr.
+t skaluj:2.
+t drukuj.
+Transcript show:'TROJKAT SUMA';cr.
+t2 := (Trojkat_rownoramienny new) initialize: 3 wysokosc: 4.
+t2 drukuj.
+(t + t2) drukuj.
