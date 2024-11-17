@@ -26,3 +26,30 @@ Transcript show:'TROJKAT SUMA';cr.
 t2 := (Trojkat_rownoramienny new) initialize: 3 wysokosc: 4.
 t2 drukuj.
 (t + t2) drukuj.
+Transcript show:'';cr.
+
+Transcript clear.
+o:=(Okrag new) initialize: 2137 srodek: ((Array new: 1) at: 1 put: 3@4).
+o drukuj.
+Transcript show: '';cr.
+
+k:=(Kwadrat new) initialize: 8.
+Transcript show: 'Kwadrat:';cr.
+k drukuj.
+k wpiszOkrag.
+(k getOkrag) drukuj.
+k skaluj: 2.0.
+(k getOkrag) drukuj.
+k skaluj: 0.5.
+(k getOkrag) drukuj.
+Transcript show: '';cr.
+
+t:=(Trojkat_rownoramienny new) initialize: 12 wysokosc: 10.
+Transcript show: 'Trojkat:';cr.
+t drukuj.
+t wpiszOkrag .
+(t getOkrag) drukuj.
+t skaluj: 3.0.
+(t getOkrag) drukuj.
+t skaluj: (1/3).
+(t getOkrag) drukuj.
